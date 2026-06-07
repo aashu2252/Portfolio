@@ -6,24 +6,43 @@ export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
+    setIsError(false);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xnqyjypa', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setIsSuccess(false), 5000); // hide success after 5s
+      } else {
+        throw new Error('Form submission failed.');
+      }
+    } catch (err) {
+      console.error('Submission error:', err);
+      setIsError(true);
+    } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setIsSuccess(false), 5000); // hide success after 5s
-    }, 1500);
+    }
   };
 
   const socialLinks = [
@@ -152,13 +171,27 @@ export default function Contact() {
                       </label>
                     </div>
 
+                    {isError && (
+                      <motion.p
+                        initial={{ opacity: 0, y: -5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="text-xs text-red-400 font-light text-center"
+                      >
+                        Submission failed. Please try again or reach out directly via email.
+                      </motion.p>
+                    )}
+
                     <button
                       type="submit"
                       disabled={isSubmitting}
+                      aria-label="Send message via contact form"
                       className="w-full py-3.5 rounded-xl bg-gradient-to-r from-nebula-cyan to-nebula-blue text-space-black font-semibold text-sm flex items-center justify-center space-x-2 shadow-lg shadow-nebula-cyan/20 hover:shadow-[0_0_20px_rgba(0,242,254,0.4)] hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50 transition-all duration-300 cursor-pointer"
                     >
                       {isSubmitting ? (
-                        <div className="w-5 h-5 border-2 border-space-black border-t-transparent rounded-full animate-spin" />
+                        <>
+                          <div className="w-4 h-4 border-2 border-space-black border-t-transparent rounded-full animate-spin" />
+                          <span>Sending...</span>
+                        </>
                       ) : (
                         <>
                           <span>Send Message</span>
