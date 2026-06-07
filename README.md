@@ -2,6 +2,8 @@
 
 A premium, fully responsive developer portfolio featuring an interactive, physics-driven deep space dark mode design aesthetic.
 
+**Live Demo:** [https://aashu2252.github.io/Portfolio/](https://aashu2252.github.io/Portfolio/)
+
 ---
 
 ## 🌌 Theme & Design System
