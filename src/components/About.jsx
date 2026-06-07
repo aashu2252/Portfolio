@@ -65,14 +65,14 @@ export default function About() {
             </p>
 
             <p className="text-gray-400 leading-relaxed font-light">
-              I love building gravity-defying web apps, designing databases, and participating in hackathons. My primary goal is to secure a software engineering internship where I can collaborate with developer teams, contribute to active codebases, and write clean, maintainable logic.
+              I love building high-performance web apps, designing databases, and participating in hackathons. My primary goal is to secure a software engineering internship where I can collaborate with developer teams, contribute to active codebases, and write clean, maintainable logic.
             </p>
 
             {/* Tech Stack Grid */}
             <div className="pt-6">
               <h4 className="text-lg font-outfit font-semibold text-gray-200 mb-4 flex items-center gap-2">
                 <Activity size={18} className="text-nebula-purple" />
-                Zero-Gravity Tech Stack
+                Core Developer Tech Stack
               </h4>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {skills.map((skill) => (

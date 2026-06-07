@@ -58,7 +58,7 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/4 w-[35rem] h-[35rem] bg-nebula-purple/10 rounded-full blur-[120px] pointer-events-none animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-nebula-cyan/10 rounded-full blur-[100px] pointer-events-none animate-pulse-glow" style={{ animationDelay: '2s' }} />
 
-      {/* Floating Geometric Orbs (Antigravity Physics) */}
+      {/* Floating Geometric Orbs (Buoyant Physics) */}
       <motion.div
         className="absolute top-1/3 left-10 md:left-24 w-12 h-12 rounded-xl border border-nebula-cyan/30 bg-nebula-cyan/5 shadow-[0_0_15px_rgba(0,242,254,0.2)] pointer-events-none"
         animate={{
@@ -108,7 +108,7 @@ export default function Hero() {
         >
           <Sparkles size={14} className="text-nebula-cyan animate-pulse" />
           <span className="text-xs font-semibold tracking-wider uppercase text-gray-300">
-            Now suspending gravity in Indore, India
+            Undergraduate Software Developer in Indore, India
           </span>
         </motion.div>
 
@@ -121,7 +121,7 @@ export default function Hero() {
         >
           Elevating Code Beyond{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-nebula-cyan via-nebula-blue to-nebula-purple text-glow-cyan">
-            Zero Gravity
+            Creative Limits
           </span>
         </motion.h1>
 

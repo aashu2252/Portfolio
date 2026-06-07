@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 export default function App() {
   return (
     <div className="relative min-h-screen text-gray-200">
-      {/* Zero Gravity Starfield Canvas */}
+      {/* Floating Starfield Canvas */}
       <SpaceBackground />
 
       {/* Main Page Elements */}

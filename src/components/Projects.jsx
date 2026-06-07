@@ -17,9 +17,9 @@ export default function Projects() {
       demo: '#',
     },
     {
-      title: 'IndoreVyapar-AI',
+      title: 'IndoreVyapar',
       category: 'Localized B2B Commerce',
-      desc: 'An AI-driven localized commercial inventory and customer intelligence portal. Helps local businesses in Indore predict supply needs, automate pricing grids, and rank data points on digital maps.',
+      desc: 'An intelligent localized commercial inventory and customer intelligence portal. Helps local businesses in Indore predict supply needs, automate pricing grids, and rank data points on digital maps.',
       tech: ['React', 'Node.js', 'Express', 'Tailwind', 'MongoDB'],
       icon: <ShoppingBag className="text-emerald-400" size={24} />,
       gradient: 'from-emerald-500/10 to-teal-500/10',
@@ -30,10 +30,10 @@ export default function Projects() {
       demo: '#',
     },
     {
-      title: 'NutricartAI',
-      category: 'AI Diet & Nutrition Assistant',
-      desc: 'An AI-powered cart companion built during the OpenClaw HackIndia hackathon. Utilizes LLM APIs to scan grocery receipts, analyze nutritional listings against diet preferences, and generate instant allergen alerts.',
-      tech: ['React.js', 'Gemini API', 'Tailwind CSS', 'Node.js'],
+      title: 'Nutricart',
+      category: 'Smart Diet & Nutrition Assistant',
+      desc: 'An intelligent cart companion built during the OpenClaw HackIndia hackathon. Utilizes LLM APIs to scan grocery receipts, analyze nutritional listings against diet preferences, and generate instant allergen alerts.',
+      tech: ['React.js', 'Generative API', 'Tailwind CSS', 'Node.js'],
       icon: <Brain className="text-cyan-400" size={24} />,
       gradient: 'from-cyan-500/10 to-blue-500/10',
       border: 'group-hover:border-cyan-500/30',
@@ -51,14 +51,14 @@ export default function Projects() {
         {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-outfit font-extrabold mb-4">
-            Gravity-Defying{' '}
+            Featured{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-nebula-cyan to-nebula-blue">
               Creations
             </span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-nebula-cyan to-nebula-blue mx-auto rounded-full" />
           <p className="text-gray-400 font-light mt-4 max-w-2xl mx-auto text-sm">
-            Hover over the projects to check their micro-gravity responses. Each card floats at an independent velocity.
+            Hover over the projects to interact with their floating animations. Each card floats at an independent velocity.
           </p>
         </div>
 

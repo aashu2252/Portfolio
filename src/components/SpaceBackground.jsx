@@ -27,7 +27,7 @@ export default function SpaceBackground() {
         this.y = height + 10; // Start just off-screen bottom to float up
         this.size = Math.random() * 2 + 1;
         this.speedX = Math.random() * 0.4 - 0.2;
-        this.speedY = -(Math.random() * 0.5 + 0.1); // float upwards (antigravity)
+        this.speedY = -(Math.random() * 0.5 + 0.1); // float upwards (y-axis drift)
         this.opacity = Math.random() * 0.5 + 0.2;
         this.hue = Math.random() > 0.5 ? 180 : 270; // Cyan or Purple tint
       }

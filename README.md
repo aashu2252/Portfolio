@@ -1,15 +1,15 @@
-# Antigravity Portfolio | Deep Space Developer Profile
+# Interactive Space Portfolio | Developer Profile
 
-A premium, fully responsive developer portfolio featuring an interactive, physics-driven **"Antigravity" (Deep Space Dark Mode)** design aesthetic.
+A premium, fully responsive developer portfolio featuring an interactive, physics-driven deep space dark mode design aesthetic.
 
 ---
 
 ## 🌌 Theme & Design System
 
-The application utilizes the **Antigravity** design language to simulate a weightless coding console drifting in space:
+The application utilizes an ethereal space design language to simulate a weightless coding console:
 - **Obsidian Dark Void:** High-contrast `#030303` base layer paired with glassmorphic cards (`backdrop-filter: blur(16px)`).
 - **Nebula Accents:** Electric cyan, deep purple, and neon pink glows illuminating background structures.
-- **Zero-Gravity Physics:** Keyframe floating animations causing cards, badges, and elements to drift slowly on the Y-axis.
+- **Weightless Physics:** Keyframe floating animations causing cards, badges, and elements to drift slowly on the Y-axis.
 - **Parallax Navigation:** Interactive canvas-based starfield background that shifts and forms constellation nodes when responding to mouse positions.
 - **3D Interactive Tilts:** Multi-axis lifting tilts using Framer Motion when hover-targeting cards.
 
@@ -28,12 +28,12 @@ The application utilizes the **Antigravity** design language to simulate a weigh
 ## 🚀 Sections Included
 
 1. **Hero Section:** Bold introduction as a Second Year Undergraduate Software Developer seeking a Software Engineering Internship, typing animation of core skills, and floating decorative elements.
-2. **About Me & Services:** Academic focus on full-stack engineering based in Indore, detailing specific internship objectives and career development goals.
+2. **About Me:** Academic focus on full-stack engineering based in Indore, detailing specific internship objectives and career development goals.
 3. **Projects Grid:** Staggered floating cards representing:
    - **RaktSetu:** Geolocation blood-donor network using Google Maps & Firebase.
-   - **IndoreVyapar-AI:** B2B commercial inventory intelligence models.
-   - **NutricartAI:** AI-powered diet companion built during OpenClaw HackIndia.
-4. **Achievements & Hackathons:** Interactive vertical timeline tracing SIH 2025 (Frontend Developer), OpenClaw HackIndia (NutricartAI), and BECon at IIT Delhi (Golden Pass holder).
+   - **IndoreVyapar:** B2B commercial inventory intelligence models.
+   - **Nutricart:** Diet companion built during OpenClaw HackIndia.
+4. **Achievements & Hackathons:** Interactive vertical timeline tracing SIH 2025 (Frontend Developer), OpenClaw HackIndia (Nutricart), and BECon at IIT Delhi (Golden Pass holder).
 5. **Contact Footer:** Minimalist footer with interactive contact validations, success receipt transitions, and links to GitHub and LinkedIn.
 
 ---

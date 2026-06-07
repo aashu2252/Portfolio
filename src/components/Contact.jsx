@@ -178,7 +178,7 @@ export default function Contact() {
                     <CheckCircle2 size={48} className="text-nebula-cyan mb-4 animate-bounce" />
                     <h4 className="text-xl font-outfit font-bold text-white mb-2">Message Received!</h4>
                     <p className="text-sm text-gray-400 font-light max-w-sm">
-                      Your transmission has cleared the gravity well. I will respond to your coordinates shortly.
+                      Your message has been successfully transmitted. I will get back to you shortly.
                     </p>
                   </motion.div>
                 )}
@@ -199,7 +199,7 @@ export default function Contact() {
           </div>
 
           <p className="text-xs text-gray-500 font-light">
-            © {new Date().getFullYear()} Aashutosh Kumar Singh. Defying gravity since 2025.
+            © {new Date().getFullYear()} Aashutosh Kumar Singh. Building for the web since 2025.
           </p>
 
           <div className="flex items-center space-x-4">

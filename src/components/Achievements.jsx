@@ -17,7 +17,7 @@ export default function Achievements() {
       year: '2025',
       title: 'OpenClaw HackIndia Hackathon',
       role: 'Hackathon Competitor',
-      desc: 'Designed and built NutricartAI—an AI companion that parses grocery receipt facts and checks diet preferences in real-time.',
+      desc: 'Designed and built Nutricart—an intelligent companion that parses grocery receipt facts and checks diet preferences in real-time.',
       icon: <ShieldAlert className="text-rose-400" size={24} />,
       color: 'border-rose-500/30 text-rose-400',
       glow: 'shadow-rose-500/5',
