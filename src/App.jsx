@@ -2,6 +2,7 @@ import SpaceBackground from './components/SpaceBackground';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
+import Education from './components/Education';
 import SkillsMatrix from './components/SkillsMatrix';
 import Projects from './components/Projects';
 import Achievements from './components/Achievements';
@@ -19,6 +20,7 @@ export default function App() {
         <main className="flex-grow">
           <Hero />
           <About />
+          <Education />
           <SkillsMatrix />
           <Projects />
           <Achievements />

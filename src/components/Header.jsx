@@ -11,7 +11,7 @@ export default function Header() {
       setIsScrolled(window.scrollY > 50);
 
       // Track active section
-      const sections = ['home', 'about', 'skills', 'projects', 'achievements', 'contact'];
+      const sections = ['home', 'about', 'education', 'skills', 'projects', 'achievements', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -34,6 +34,7 @@ export default function Header() {
   const navLinks = [
     { label: 'Home', id: 'home' },
     { label: 'About', id: 'about' },
+    { label: 'Education', id: 'education' },
     { label: 'Skills', id: 'skills' },
     { label: 'Projects', id: 'projects' },
     { label: 'Achievements', id: 'achievements' },
