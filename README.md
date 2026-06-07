@@ -60,17 +60,4 @@ Compile and optimize assets for deployment:
 npm run build
 ```
 
----
 
-## 🚀 GitHub Deployment
-
-To link this local workspace and push it to your GitHub account:
-
-1. **Create a remote repository** on your GitHub panel.
-2. **Copy the repository URL** (e.g., `https://github.com/your-username/repo-name.git`).
-3. **Add the remote** in this workspace and push:
-   ```bash
-   git remote add origin <your-repository-url>
-   git branch -M master
-   git push -u origin master
-   ```
