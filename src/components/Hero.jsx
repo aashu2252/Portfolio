@@ -2,14 +2,15 @@ import { motion } from 'framer-motion';
 import { Sparkles, ArrowDown, ExternalLink } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
+const roles = [
+  'Software Developer',
+  'Agency Founder',
+  'Tech Innovator',
+  'SEO Strategist'
+];
+
 export default function Hero() {
   const [typedText, setTypedText] = useState('');
-  const roles = [
-    'Software Developer',
-    'Agency Founder',
-    'Tech Innovator',
-    'SEO Strategist'
-  ];
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -20,20 +21,24 @@ export default function Hero() {
 
     if (!isDeleting && charIndex === activeRole.length) {
       typingSpeed = 2000; // Pause at end of word
-      setIsDeleting(true);
     } else if (isDeleting && charIndex === 0) {
-      setIsDeleting(false);
-      setRoleIndex((prev) => (prev + 1) % roles.length);
       typingSpeed = 500; // Pause before typing next
     }
 
     const timer = setTimeout(() => {
-      setTypedText(
-        isDeleting
-          ? activeRole.substring(0, charIndex - 1)
-          : activeRole.substring(0, charIndex + 1)
-      );
-      setCharIndex((prev) => (prev + (isDeleting ? -1 : 1)));
+      if (!isDeleting && charIndex === activeRole.length) {
+        setIsDeleting(true);
+      } else if (isDeleting && charIndex === 0) {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      } else {
+        setTypedText(
+          isDeleting
+            ? activeRole.substring(0, charIndex - 1)
+            : activeRole.substring(0, charIndex + 1)
+        );
+        setCharIndex((prev) => (prev + (isDeleting ? -1 : 1)));
+      }
     }, typingSpeed);
 
     return () => clearTimeout(timer);

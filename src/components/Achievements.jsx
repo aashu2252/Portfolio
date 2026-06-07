@@ -62,7 +62,7 @@ export default function Achievements() {
 
         {/* Timeline Grid */}
         <div className="relative border-l border-space-border/60 max-w-4xl mx-auto pl-6 md:pl-10 space-y-12">
-          {events.map((event, index) => (
+          {events.map((event) => (
             <motion.div
               key={event.title}
               initial={{ opacity: 0, x: -30 }}
