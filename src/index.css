@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-space-black text-gray-200 font-inter antialiased overflow-x-hidden;
+    background-image: 
+      radial-gradient(circle at 50% 20%, rgba(127, 0, 255, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 20% 60%, rgba(0, 242, 254, 0.06) 0%, transparent 35%),
+      radial-gradient(circle at 80% 80%, rgba(225, 0, 255, 0.05) 0%, transparent 30%),
+      radial-gradient(circle at 50% 50%, #08080a 0%, #030303 100%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-outfit font-semibold tracking-tight text-white;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030303;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  border: 2px solid #030303;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 242, 254, 0.4);
+}
+
+/* Glowing Typography */
+.text-glow-cyan {
+  text-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
+}
+.text-glow-purple {
+  text-shadow: 0 0 15px rgba(127, 0, 255, 0.6);
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+  background: rgba(15, 15, 22, 0.45);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(20, 20, 30, 0.6);
+  border-color: rgba(0, 242, 254, 0.3);
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Glowing borders on focus */
+.focus-glow:focus {
+  outline: none;
+  border-color: rgba(0, 242, 254, 0.5);
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+}
+
+/* Zero-gravity particle grid backgrounds */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Custom hides for standard UI */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
