@@ -117,6 +117,16 @@ export default function Hero() {
               </span>
             </motion.div>
 
+            {/* Name Placeholder */}
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="text-2xl md:text-3xl font-outfit font-bold text-gray-300 mb-2"
+            >
+              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-nebula-cyan to-nebula-blue font-extrabold">Aashutosh Kumar Singh</span>
+            </motion.h2>
+
             {/* Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
@@ -124,9 +134,9 @@ export default function Hero() {
               transition={{ duration: 1, delay: 0.2 }}
               className="text-4xl md:text-6xl font-outfit font-extrabold tracking-tight mb-4 leading-[1.1] text-white"
             >
-              Elevating Code Beyond{' '}
+              Second-Year Undergraduate{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-nebula-cyan via-nebula-blue to-nebula-purple text-glow-cyan">
-                Creative Limits
+                Software Developer
               </span>
             </motion.h1>
 
@@ -232,10 +242,10 @@ export default function Hero() {
               <div className="absolute -inset-2 bg-gradient-to-r from-nebula-cyan via-nebula-blue to-nebula-purple rounded-full blur-xl opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse-glow" />
               
               {/* Profile Image Circle */}
-              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-space-border/80 bg-space-card/40 backdrop-blur-lg flex items-center justify-center shadow-2xl">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-space-border/80 bg-space-card/40 backdrop-blur-lg flex items-center justify-center shadow-2xl animate-drift-slow">
                 <img
                   src={heroImg}
-                  alt="Aashutosh Singh"
+                  alt="Aashutosh Kumar Singh [Profile Picture]"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -243,6 +253,7 @@ export default function Hero() {
                   }}
                 />
                 <div className="hidden absolute inset-0 bg-gradient-to-br from-space-dark to-space-black flex-col items-center justify-center text-gray-400">
+                  <span className="text-[10px] font-mono tracking-wider text-nebula-cyan mb-2">[Profile Picture]</span>
                   <svg className="w-16 h-16 text-nebula-cyan/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                   </svg>

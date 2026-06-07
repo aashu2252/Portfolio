@@ -35,10 +35,10 @@ export default function Projects() {
     },
     {
       title: 'NutricartAI',
-      category: 'AI Diet & Nutrition Assistant',
+      category: 'Smart Diet & Nutrition Assistant',
       problem: 'Consumers struggle to identify allergen alerts and analyze nutritional items when scanning grocery products.',
-      solution: 'Built an intelligent receipt companion utilizing the Gemini API to scan grocery receipts, analyze ingredients, and flag health alerts.',
-      tech: ['React.js', 'Gemini API', 'Tailwind CSS', 'Node.js'],
+      solution: 'Built an intelligent receipt companion utilizing advanced natural language APIs to scan grocery receipts, analyze ingredients, and flag health alerts.',
+      tech: ['React.js', 'NLP APIs', 'Tailwind CSS', 'Node.js'],
       icon: <Brain className="text-cyan-400" size={24} />,
       gradient: 'from-cyan-500/10 to-blue-500/10',
       border: 'group-hover:border-cyan-500/30',

@@ -33,8 +33,8 @@ The application utilizes an ethereal space design language to simulate a weightl
 2. **About Me:** Academic focus on full-stack engineering based in Indore, detailing specific internship objectives and career development goals.
 3. **Projects Grid:** Staggered floating cards representing:
    - **RaktSetu:** Geolocation blood-donor network using Google Maps & Firebase.
-   - **IndoreVyapar-AI:** B2B commercial inventory AI models.
-   - **NutricartAI:** AI-powered diet companion built during OpenClaw HackIndia.
+   - **IndoreVyapar-AI:** B2B commercial inventory forecasting.
+   - **NutricartAI:** Diet companion built during OpenClaw HackIndia.
 4. **Achievements & Hackathons:** Interactive vertical timeline tracing SIH 2025 (Frontend Developer), OpenClaw HackIndia (NutricartAI), and BECon at IIT Delhi (Golden Pass holder).
 5. **Contact Footer:** Minimalist footer with interactive contact validations, success receipt transitions, and links to GitHub and LinkedIn.
 

@@ -16,7 +16,7 @@ export default function SkillsMatrix() {
     {
       title: 'Tools & APIs',
       icon: <Cpu className="text-nebula-purple" size={20} />,
-      skills: ['Git & GitHub', 'Gemini API', 'Google Maps API', 'Python (NLP)', 'Vercel / Netlify', 'Postman']
+      skills: ['Git & GitHub', 'GraphQL', 'Google Maps API', 'Python (NLP)', 'Vercel / Netlify', 'Postman']
     }
   ];
 

@@ -10,7 +10,7 @@ export default function About() {
     { name: 'Firebase', level: 'Intermediate', color: 'from-orange-400 to-amber-600' },
     { name: 'MongoDB & SQL', level: 'Intermediate', color: 'from-green-500 to-emerald-700' },
     { name: 'Python & NLP', level: 'Intermediate', color: 'from-blue-500 to-indigo-600' },
-    { name: 'SEO Auditing', level: 'Advanced', color: 'from-purple-400 to-pink-500' },
+    { name: 'TypeScript', level: 'Advanced', color: 'from-purple-400 to-pink-500' },
   ];
 
   const focusAreas = [
@@ -27,7 +27,7 @@ export default function About() {
     {
       icon: <Activity className="text-nebula-purple" size={24} />,
       title: 'Algorithms & NLP',
-      desc: 'Integrating AI models and structuring data pipelines for specialized local applications.'
+      desc: 'Integrating machine learning models and structuring data pipelines for specialized local applications.'
     }
   ];
 
