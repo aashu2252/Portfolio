@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Shield, MapPin, Code, Search, Globe, Activity } from 'lucide-react';
+import { Shield, MapPin, Code, Globe, Activity } from 'lucide-react';
 
 export default function About() {
   const skills = [
@@ -13,21 +13,21 @@ export default function About() {
     { name: 'SEO Auditing', level: 'Advanced', color: 'from-purple-400 to-pink-500' },
   ];
 
-  const services = [
+  const focusAreas = [
     {
       icon: <Code className="text-nebula-cyan" size={24} />,
-      title: 'Full-Stack Development',
-      desc: 'Building modern, interactive, and lightning-fast web architectures tailored to business workflows.'
+      title: 'Full-Stack Integration',
+      desc: 'Building responsive React interfaces backed by secure, relational, and real-time backend pipelines.'
     },
     {
-      icon: <Search className="text-nebula-blue" size={24} />,
-      title: 'SEO & Growth Strategy',
-      desc: 'Optimizing search patterns and localized visibility to drive organic growth for local enterprises.'
+      icon: <Globe className="text-nebula-blue" size={24} />,
+      title: 'Fidelity UI/UX Systems',
+      desc: 'Crafting responsive, clean animations and accessible layout panels with high visual style.'
     },
     {
-      icon: <Globe className="text-nebula-purple" size={24} />,
-      title: 'Digital Infrastructure',
-      desc: 'Deploying custom digital channels, CRM pipelines, and product catalog hubs.'
+      icon: <Activity className="text-nebula-purple" size={24} />,
+      title: 'Algorithms & NLP',
+      desc: 'Integrating intelligence APIs and structuring data models for specialized local apps.'
     }
   ];
 
@@ -61,11 +61,11 @@ export default function About() {
             </h3>
             
             <p className="text-gray-300 leading-relaxed text-lg font-light">
-              As an undergraduate software developer currently in my <span className="text-white font-semibold">4th Semester</span>, I focus on the intersection of modern frontend architectures and backend integrations. I merge programmatic logic with business automation, enabling localized ventures to scale.
+              As a <span className="text-white font-semibold">Second Year Undergraduate Software Developer</span> based in Indore, India, I specialize in creating full-stack web architectures and responsive interfaces. I focus on developing clean, interactive applications that solve real-world problems.
             </p>
 
             <p className="text-gray-400 leading-relaxed font-light">
-              Beyond university lectures, I design and configure software pipelines. I lead engineering at my digital agency, optimizing infrastructure for high availability and conversion-friendly localized search ranking.
+              I love building gravity-defying web apps, designing databases, and participating in hackathons. My primary goal is to secure a software engineering internship where I can collaborate with developer teams, contribute to active codebases, and write clean, maintainable logic.
             </p>
 
             {/* Tech Stack Grid */}
@@ -89,7 +89,7 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Agency showcase card */}
+          {/* Goals showcase card */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -103,8 +103,8 @@ export default function About() {
 
               <div className="flex items-center justify-between mb-6">
                 <div>
-                  <span className="text-xs uppercase tracking-widest text-nebula-cyan font-bold">Digital Agency</span>
-                  <h3 className="text-3xl font-outfit font-bold text-white mt-1">Softappix</h3>
+                  <span className="text-xs uppercase tracking-widest text-nebula-cyan font-bold">Objectives</span>
+                  <h3 className="text-3xl font-outfit font-bold text-white mt-1">Internship Goals</h3>
                 </div>
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-nebula-purple to-nebula-pink flex items-center justify-center shadow-lg shadow-nebula-purple/20">
                   <Shield className="text-white" size={24} />
@@ -112,17 +112,17 @@ export default function About() {
               </div>
 
               <p className="text-gray-300 font-light mb-8 text-sm leading-relaxed">
-                At Softappix, we specialize in high-performance web development and customized SEO search growth pipelines. We deliver premium digital portals and catalog platforms, allowing Indore enterprises to thrive in modern organic search pools.
+                I want to leverage my foundational full-stack knowledge and programmatic problem-solving skills inside a professional development workflow, learning best practices while adding direct product value.
               </p>
 
-              {/* Service list */}
+              {/* Focus list */}
               <div className="space-y-4">
-                {services.map((service, index) => (
+                {focusAreas.map((area, index) => (
                   <div key={index} className="flex gap-4 p-3 rounded-xl hover:bg-space-darker/50 transition-colors">
-                    <div className="mt-1">{service.icon}</div>
+                    <div className="mt-1">{area.icon}</div>
                     <div>
-                      <h4 className="text-sm font-semibold text-white">{service.title}</h4>
-                      <p className="text-xs text-gray-400 mt-0.5 leading-relaxed font-light">{service.desc}</p>
+                      <h4 className="text-sm font-semibold text-white">{area.title}</h4>
+                      <p className="text-xs text-gray-400 mt-0.5 leading-relaxed font-light">{area.desc}</p>
                     </div>
                   </div>
                 ))}

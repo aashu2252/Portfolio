@@ -18,7 +18,7 @@ The application utilizes the **Antigravity** design language to simulate a weigh
 ## 🛠️ Tech Stack
 
 - **Core Framework:** React 18 & Vite
-- **Styling Pipeline:** Tailwind CSS & PostCSS
+- **Styling Pipeline:** Tailwind CSS v4 & PostCSS
 - **Animation System:** Framer Motion (for entrance triggers & 3D micro-interactions)
 - **Icons Library:** Lucide React
 - **Typography:** Google Fonts (Outfit for headers, Inter for text)
@@ -27,15 +27,13 @@ The application utilizes the **Antigravity** design language to simulate a weigh
 
 ## 🚀 Sections Included
 
-1. **Hero Section:** Bold introduction as an Undergraduate Software Developer (4th Sem) and Lead at Softappix digital agency, typing animation of skills, and floating decorative elements.
-2. **About Me & Services:** Academic focus on full-stack engineering based in Indore, featuring a dedicated high-fidelity showcase for your agency **Softappix** (Web Development & Local SEO Services).
+1. **Hero Section:** Bold introduction as a Second Year Undergraduate Software Developer seeking a Software Engineering Internship, typing animation of core skills, and floating decorative elements.
+2. **About Me & Services:** Academic focus on full-stack engineering based in Indore, detailing specific internship objectives and career development goals.
 3. **Projects Grid:** Staggered floating cards representing:
    - **RaktSetu:** Geolocation blood-donor network using Google Maps & Firebase.
-   - **LogicLens & Fraud-Guard-AI:** NLP and anomalous financial fraud-detection logs.
    - **IndoreVyapar-AI:** B2B commercial inventory intelligence models.
-   - **CreeperScape:** Horror game physical investigation folder and web terminal.
-   - **Alacrity Enterprises:** High-traffic enterprise catalog dashboard.
-4. **Achievements & Hackathons:** Interactive vertical timeline tracing SIH 2025, SIH 2026, OpenClaw HackIndia, and BECon at IIT Delhi (Golden Pass holder).
+   - **NutricartAI:** AI-powered diet companion built during OpenClaw HackIndia.
+4. **Achievements & Hackathons:** Interactive vertical timeline tracing SIH 2025 (Frontend Developer), OpenClaw HackIndia (NutricartAI), and BECon at IIT Delhi (Golden Pass holder).
 5. **Contact Footer:** Minimalist footer with interactive contact validations, success receipt transitions, and links to GitHub and LinkedIn.
 
 ---
@@ -71,6 +69,6 @@ To link this local workspace and push it to your GitHub account:
 3. **Add the remote** in this workspace and push:
    ```bash
    git remote add origin <your-repository-url>
-   git branch -M main
-   git push -u origin main
+   git branch -M master
+   git push -u origin master
    ```

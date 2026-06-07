@@ -3,10 +3,10 @@ import { Sparkles, ArrowDown, ExternalLink } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const roles = [
-  'Software Developer',
-  'Agency Founder',
-  'Tech Innovator',
-  'SEO Strategist'
+  'Full-Stack Developer',
+  'React Enthusiast',
+  'UI/UX Designer',
+  'Problem Solver'
 ];
 
 export default function Hero() {
@@ -132,7 +132,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-lg md:text-2xl text-gray-400 font-light max-w-3xl mx-auto mb-4"
         >
-          Undergraduate Software Developer <span className="text-white font-medium">(4th Semester)</span> & Lead at <span className="text-transparent bg-clip-text bg-gradient-to-r from-nebula-purple to-nebula-pink font-semibold">Softappix</span>.
+          Second Year Undergraduate Software Developer <span className="text-white font-medium">focused on Full-Stack engineering and seeking a student internship</span>.
         </motion.p>
 
         {/* Animated Role Title */}

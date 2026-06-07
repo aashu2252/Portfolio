@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, MapPin, Brain, ShoppingBag, Eye, HelpCircle } from 'lucide-react';
+import { ExternalLink, MapPin, Brain, ShoppingBag } from 'lucide-react';
 
 export default function Projects() {
   const projects = [
@@ -17,22 +17,9 @@ export default function Projects() {
       demo: '#',
     },
     {
-      title: 'LogicLens & Fraud-Guard-AI',
-      category: 'Natural Language Processing & FinTech',
-      desc: 'Dual-AI integration analyzing natural language patterns in contracts and scanning financial transaction records for anomalous behaviors. Combines transformer pipelines with transactional anomaly models.',
-      tech: ['Python', 'NLP', 'PyTorch', 'React.js', 'FastAPI'],
-      icon: <Brain className="text-blue-400" size={24} />,
-      gradient: 'from-blue-500/10 to-indigo-500/10',
-      border: 'group-hover:border-blue-500/30',
-      glow: 'shadow-blue-500/5',
-      floatClass: 'animate-float-medium',
-      github: '#',
-      demo: '#',
-    },
-    {
       title: 'IndoreVyapar-AI',
       category: 'Localized B2B Commerce',
-      desc: 'An AI-driven localized commercial inventory and customer intelligence portal. Helps local businesses in Indore predict supply needs, automate pricing grids, and rank items on digital maps.',
+      desc: 'An AI-driven localized commercial inventory and customer intelligence portal. Helps local businesses in Indore predict supply needs, automate pricing grids, and rank data points on digital maps.',
       tech: ['React', 'Node.js', 'Express', 'Tailwind', 'MongoDB'],
       icon: <ShoppingBag className="text-emerald-400" size={24} />,
       gradient: 'from-emerald-500/10 to-teal-500/10',
@@ -43,24 +30,11 @@ export default function Projects() {
       demo: '#',
     },
     {
-      title: 'CreeperScape',
-      category: 'Digital Horror Investigation Game',
-      desc: 'An immersive murder mystery experience connecting physical items (letters, files, audio tapes) with an interactive web portal. Gamers decrypt digital logs and terminal transcripts to solve cases.',
-      tech: ['Vanilla JS', 'CSS Grid', 'HTML5 Audio', 'SVG Art'],
-      icon: <Eye className="text-purple-400" size={24} />,
-      gradient: 'from-purple-500/10 to-pink-500/10',
-      border: 'group-hover:border-purple-500/30',
-      glow: 'shadow-purple-500/5',
-      floatClass: 'animate-float-slow',
-      github: '#',
-      demo: '#',
-    },
-    {
-      title: 'Alacrity Enterprises',
-      category: 'Enterprise Digital Infrastructure',
-      desc: 'A commercial product catalog and corporate catalog architecture built for high traffic. Incorporates advanced filtering structures, localized cache layers, and an administrative dashboard.',
-      tech: ['React.js', 'Tailwind CSS', 'Vite', 'PostgreSQL', 'Express'],
-      icon: <HelpCircle className="text-cyan-400" size={24} />,
+      title: 'NutricartAI',
+      category: 'AI Diet & Nutrition Assistant',
+      desc: 'An AI-powered cart companion built during the OpenClaw HackIndia hackathon. Utilizes LLM APIs to scan grocery receipts, analyze nutritional listings against diet preferences, and generate instant allergen alerts.',
+      tech: ['React.js', 'Gemini API', 'Tailwind CSS', 'Node.js'],
+      icon: <Brain className="text-cyan-400" size={24} />,
       gradient: 'from-cyan-500/10 to-blue-500/10',
       border: 'group-hover:border-cyan-500/30',
       glow: 'shadow-cyan-500/5',

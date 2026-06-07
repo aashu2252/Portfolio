@@ -1,37 +1,27 @@
 import { motion } from 'framer-motion';
-import { Award, Zap, Trophy, ShieldAlert } from 'lucide-react';
+import { Award, Zap, ShieldAlert } from 'lucide-react';
 
 export default function Achievements() {
   const events = [
     {
-      year: '2026',
-      title: 'Smart India Hackathon (SIH 2026)',
-      role: 'Participant & Lead Engineer',
-      desc: 'Selected to develop localized digital architecture models addressing national administrative problem statements.',
-      icon: <Trophy className="text-amber-400" size={24} />,
-      color: 'border-amber-500/30 text-amber-400',
-      glow: 'shadow-amber-500/5',
+      year: '2025',
+      title: 'Smart India Hackathon (SIH 2025)',
+      role: 'Frontend Developer',
+      desc: 'Engineered clean, interactive dashboard interfaces for resource tracking and geo-allocation grids during the SIH national qualifiers.',
+      icon: <Award className="text-purple-400" size={24} />,
+      color: 'border-purple-500/30 text-purple-400',
+      glow: 'shadow-purple-500/5',
       delay: 0.1
     },
     {
       year: '2025',
-      title: 'Smart India Hackathon (SIH 2025)',
-      role: 'Core Backend Architect',
-      desc: 'Engineered high-performance indexing pipelines for real-time tracking systems during the SIH national qualifiers.',
-      icon: <Award className="text-purple-400" size={24} />,
-      color: 'border-purple-500/30 text-purple-400',
-      glow: 'shadow-purple-500/5',
-      delay: 0.2
-    },
-    {
-      year: '2025',
       title: 'OpenClaw HackIndia Hackathon',
-      role: 'NLP Track Winner / Competitor',
-      desc: 'Collaborated on semantic security audits and developed an AI fraud-detection pipeline that tracks ledger anomalies.',
+      role: 'Hackathon Competitor',
+      desc: 'Designed and built NutricartAI—an AI companion that parses grocery receipt facts and checks diet preferences in real-time.',
       icon: <ShieldAlert className="text-rose-400" size={24} />,
       color: 'border-rose-500/30 text-rose-400',
       glow: 'shadow-rose-500/5',
-      delay: 0.3
+      delay: 0.2
     },
     {
       year: '2025',
@@ -41,7 +31,7 @@ export default function Achievements() {
       icon: <Zap className="text-cyan-400" size={24} />,
       color: 'border-cyan-500/30 text-cyan-400',
       glow: 'shadow-cyan-500/5',
-      delay: 0.4
+      delay: 0.3
     }
   ];
 
