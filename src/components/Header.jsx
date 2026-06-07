@@ -11,7 +11,7 @@ export default function Header() {
       setIsScrolled(window.scrollY > 50);
 
       // Track active section
-      const sections = ['home', 'about', 'projects', 'achievements', 'contact'];
+      const sections = ['home', 'about', 'skills', 'projects', 'achievements', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -34,6 +34,7 @@ export default function Header() {
   const navLinks = [
     { label: 'Home', id: 'home' },
     { label: 'About', id: 'about' },
+    { label: 'Skills', id: 'skills' },
     { label: 'Projects', id: 'projects' },
     { label: 'Achievements', id: 'achievements' },
     { label: 'Contact', id: 'contact' },
@@ -90,10 +91,18 @@ export default function Header() {
           
           <button
             onClick={() => handleNavClick('contact')}
-            className="ml-4 px-5 py-2 text-xs font-semibold uppercase tracking-wider rounded-full border border-nebula-cyan/50 text-nebula-cyan hover:bg-nebula-cyan/10 hover:border-nebula-cyan transition-all duration-300 shadow-[0_0_15px_rgba(0,242,254,0.1)] hover:shadow-[0_0_20px_rgba(0,242,254,0.3)] hover:-translate-y-0.5"
+            className="ml-4 px-5 py-2 text-xs font-semibold uppercase tracking-wider rounded-full border border-nebula-cyan/50 text-nebula-cyan hover:bg-nebula-cyan/10 hover:border-nebula-cyan transition-all duration-300 shadow-[0_0_15px_rgba(0,242,254,0.1)] hover:shadow-[0_0_20px_rgba(0,242,254,0.3)] hover:-translate-y-0.5 cursor-pointer"
           >
             Hire Me
           </button>
+          
+          <a
+            href="/Aashutosh_Singh_Resume.pdf"
+            download="Aashutosh_Singh_Resume.pdf"
+            className="ml-2 px-5 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-gradient-to-r from-nebula-cyan to-nebula-blue text-space-black hover:shadow-[0_0_20px_rgba(0,242,254,0.4)] hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center cursor-pointer"
+          >
+            Resume
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -130,10 +139,18 @@ export default function Header() {
           ))}
           <button
             onClick={() => handleNavClick('contact')}
-            className="w-full mt-4 text-center py-2.5 rounded-lg bg-gradient-to-r from-nebula-cyan to-nebula-blue text-white font-semibold shadow-md shadow-nebula-cyan/20 hover:opacity-90 transition-opacity"
+            className="w-full mt-4 text-center py-2.5 rounded-lg bg-gradient-to-r from-nebula-cyan to-nebula-blue text-white font-semibold shadow-md shadow-nebula-cyan/20 hover:opacity-90 transition-opacity cursor-pointer"
           >
             Hire Me
           </button>
+          
+          <a
+            href="/Aashutosh_Singh_Resume.pdf"
+            download="Aashutosh_Singh_Resume.pdf"
+            className="w-full mt-2 text-center py-2.5 rounded-lg border border-nebula-cyan/50 text-nebula-cyan font-semibold hover:bg-nebula-cyan/10 transition-colors flex items-center justify-center cursor-pointer"
+          >
+            Download Resume
+          </a>
         </nav>
       </div>
     </header>

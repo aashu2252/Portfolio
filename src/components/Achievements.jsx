@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Award, Zap, ShieldAlert } from 'lucide-react';
+import GithubActivity from './GithubActivity';
 
 export default function Achievements() {
   const events = [
@@ -92,6 +93,9 @@ export default function Achievements() {
             </motion.div>
           ))}
         </div>
+
+        {/* GitHub Activity Card */}
+        <GithubActivity />
       </div>
     </section>
   );

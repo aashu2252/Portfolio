@@ -6,7 +6,8 @@ export default function Projects() {
     {
       title: 'RaktSetu',
       category: 'Hyperlocal Healthcare',
-      desc: 'A real-time hyperlocal blood donation network mapping donors and hospitals. Utilizes Google Maps API geolocation grids and Firebase real-time nodes for synchronous chat and availability updates.',
+      problem: 'Critical delays in matching blood donors with patients/hospitals during medical emergencies in specific neighborhoods.',
+      solution: 'Designed a real-time hyperlocal grid system linking donors and seekers using interactive map layers and live availability updates.',
       tech: ['React', 'Firebase', 'Google Maps API', 'Tailwind CSS'],
       icon: <MapPin className="text-red-400" size={24} />,
       gradient: 'from-red-500/10 to-orange-500/10',
@@ -19,7 +20,8 @@ export default function Projects() {
     {
       title: 'IndoreVyapar-AI',
       category: 'Localized B2B Commerce',
-      desc: 'An AI-driven localized commercial inventory and customer intelligence portal. Helps local businesses in Indore predict supply needs, automate pricing grids, and rank data points on digital maps.',
+      problem: 'Local B2B merchants in Indore struggle to predict supply requirements and optimize distribution channels.',
+      solution: 'Developed a commercial inventory system with B2B analytics and custom data layer models mapping local demand patterns.',
       tech: ['React', 'Node.js', 'Express', 'Tailwind', 'MongoDB'],
       icon: <ShoppingBag className="text-emerald-400" size={24} />,
       gradient: 'from-emerald-500/10 to-teal-500/10',
@@ -32,7 +34,8 @@ export default function Projects() {
     {
       title: 'NutricartAI',
       category: 'AI Diet & Nutrition Assistant',
-      desc: 'An AI-powered cart companion built during the OpenClaw HackIndia hackathon. Utilizes the Gemini API to scan grocery receipts, analyze nutritional listings against diet preferences, and generate instant allergen alerts.',
+      problem: 'Consumers struggle to identify allergen alerts and analyze nutritional items when scanning grocery products.',
+      solution: 'Built an intelligent receipt companion utilizing the Gemini API to scan grocery receipts, analyze ingredients, and flag health alerts.',
       tech: ['React.js', 'Gemini API', 'Tailwind CSS', 'Node.js'],
       icon: <Brain className="text-cyan-400" size={24} />,
       gradient: 'from-cyan-500/10 to-blue-500/10',
@@ -97,16 +100,24 @@ export default function Projects() {
                 {project.title}
               </h3>
 
-              <p className="text-gray-400 font-light text-sm leading-relaxed mb-6 h-32 overflow-y-auto relative z-10">
-                {project.desc}
-              </p>
+              {/* Problem / Solution Structure */}
+              <div className="space-y-3 mb-6 h-40 overflow-y-auto relative z-10 text-[11px] leading-relaxed">
+                <div>
+                  <span className="text-[9px] uppercase font-bold text-gray-500 block tracking-wider">Problem</span>
+                  <p className="text-gray-300 font-light">{project.problem}</p>
+                </div>
+                <div>
+                  <span className="text-[9px] uppercase font-bold text-nebula-cyan block tracking-wider">Solution</span>
+                  <p className="text-gray-300 font-light">{project.solution}</p>
+                </div>
+              </div>
 
               {/* Technology Tags */}
               <div className="flex flex-wrap gap-2 mb-6 relative z-10">
                 {project.tech.map((t) => (
                   <span
                     key={t}
-                    className="text-[10px] font-semibold px-2.5 py-1 rounded-md bg-space-dark border border-space-border/80 text-gray-300"
+                    className="text-[9px] font-semibold px-2.5 py-1 rounded-md bg-space-dark border border-space-border/80 text-gray-300"
                   >
                     {t}
                   </span>
@@ -117,14 +128,14 @@ export default function Projects() {
               <div className="flex items-center justify-between pt-4 border-t border-space-border/50 relative z-10">
                 <a
                   href={project.github}
-                  className="flex items-center space-x-1.5 text-xs text-gray-400 hover:text-white transition-colors"
+                  className="flex items-center space-x-1.5 text-xs text-gray-400 hover:text-white transition-colors cursor-pointer"
                 >
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                   <span>Repository</span>
                 </a>
                 <a
                   href={project.demo}
-                  className="flex items-center space-x-1 text-xs text-nebula-cyan hover:text-white transition-colors font-semibold"
+                  className="flex items-center space-x-1 text-xs text-nebula-cyan hover:text-white transition-colors font-semibold cursor-pointer"
                 >
                   <span>Launch App</span>
                   <ExternalLink size={14} />

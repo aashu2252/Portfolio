@@ -157,7 +157,7 @@ export default function Hero() {
         >
           <button
             onClick={() => handleScroll('projects')}
-            className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-nebula-cyan to-nebula-blue text-space-black font-semibold text-base shadow-[0_0_20px_rgba(0,242,254,0.3)] hover:shadow-[0_0_30px_rgba(0,242,254,0.6)] hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
+            className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-nebula-cyan to-nebula-blue text-space-black font-semibold text-base shadow-[0_0_20px_rgba(0,242,254,0.3)] hover:shadow-[0_0_30px_rgba(0,242,254,0.6)] hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer"
           >
             <span>View My Work</span>
             <ArrowDown size={18} />
@@ -165,11 +165,19 @@ export default function Hero() {
           
           <button
             onClick={() => handleScroll('contact')}
-            className="w-full sm:w-auto px-8 py-4 rounded-full border border-space-border bg-space-card text-white font-semibold text-base hover:bg-space-dark hover:border-nebula-purple/50 hover:shadow-[0_0_20px_rgba(127,0,255,0.2)] hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2"
+            className="w-full sm:w-auto px-8 py-4 rounded-full border border-space-border bg-space-card text-white font-semibold text-base hover:bg-space-dark hover:border-nebula-purple/50 hover:shadow-[0_0_20px_rgba(127,0,255,0.2)] hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer"
           >
             <span>Contact Me</span>
             <ExternalLink size={16} />
           </button>
+
+          <a
+            href="/Aashutosh_Singh_Resume.pdf"
+            download="Aashutosh_Singh_Resume.pdf"
+            className="w-full sm:w-auto px-8 py-4 rounded-full border border-nebula-cyan/50 text-nebula-cyan font-semibold text-base hover:bg-nebula-cyan/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.3)] hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer"
+          >
+            <span>Download Resume</span>
+          </a>
         </motion.div>
 
         {/* Scroll Indicator */}
