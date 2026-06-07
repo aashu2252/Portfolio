@@ -27,7 +27,7 @@ export default function About() {
     {
       icon: <Activity className="text-nebula-purple" size={24} />,
       title: 'Algorithms & NLP',
-      desc: 'Integrating intelligence APIs and structuring data models for specialized local apps.'
+      desc: 'Integrating AI models and structuring data pipelines for specialized local applications.'
     }
   ];
 
