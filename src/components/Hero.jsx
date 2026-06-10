@@ -101,7 +101,7 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto px-6 z-10 relative w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center text-center lg:text-left">
-          
+
           {/* Left Column: Bio and Info */}
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start order-2 lg:order-1">
             {/* Intro Pill */}
@@ -170,7 +170,7 @@ export default function Hero() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/aashu2252"
+                href="https://linkedin.com/in/aashu2252"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-space-border bg-space-card/60 text-gray-300 hover:text-nebula-blue hover:border-nebula-blue/50 hover:shadow-[0_0_15px_rgba(0,100,255,0.3)] hover:scale-110 transition-all duration-300 cursor-pointer"
@@ -211,7 +211,7 @@ export default function Hero() {
                 <span>View My Work</span>
                 <ArrowDown size={16} />
               </button>
-              
+
               <button
                 onClick={() => handleScroll('contact')}
                 className="w-full sm:w-auto px-6 py-3 rounded-full border border-space-border bg-space-card text-white font-semibold text-sm hover:bg-space-dark hover:border-nebula-purple/50 hover:shadow-[0_0_20px_rgba(127,0,255,0.2)] hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer"
@@ -221,8 +221,8 @@ export default function Hero() {
               </button>
 
               <a
-                href="/Aashutosh_Singh_Resume.pdf"
-                download="Aashutosh_Singh_Resume.pdf"
+                href="/resume.pdf"
+                download="resume.pdf"
                 className="w-full sm:w-auto px-6 py-3 rounded-full border border-nebula-cyan/50 text-nebula-cyan font-semibold text-sm hover:bg-nebula-cyan/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.3)] hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer"
               >
                 <span>Download Resume</span>
@@ -240,7 +240,7 @@ export default function Hero() {
             >
               {/* Outer Glow Backdrops */}
               <div className="absolute -inset-2 bg-gradient-to-r from-nebula-cyan via-nebula-blue to-nebula-purple rounded-full blur-xl opacity-40 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse-glow" />
-              
+
               {/* Profile Image Circle */}
               <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-space-border/80 bg-space-card/40 backdrop-blur-lg flex items-center justify-center shadow-2xl animate-drift-slow">
                 <img
@@ -268,7 +268,7 @@ export default function Hero() {
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
               </motion.div>
-              
+
               <motion.div
                 className="absolute -bottom-3 -left-3 p-2.5 rounded-2xl bg-space-dark/80 border border-space-border backdrop-blur-md shadow-lg text-nebula-purple pointer-events-none"
                 animate={{ y: [0, 6, 0] }}
@@ -290,7 +290,7 @@ export default function Hero() {
         >
           <span className="text-[10px] uppercase tracking-widest text-gray-500 mb-2">Scroll Down</span>
           <div className="w-6 h-10 rounded-full border border-gray-600 flex justify-center p-1.5">
-            <motion.div 
+            <motion.div
               className="w-1.5 h-1.5 rounded-full bg-nebula-cyan"
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

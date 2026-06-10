@@ -7,14 +7,13 @@ export default function Education() {
     'Object-Oriented Programming',
     'Database Management Systems',
     'Computer Networks',
-    'Operating Systems',
-    'Web Architecture'
+    'Operating Systems'
   ];
 
   return (
     <section id="education" className="relative py-24 bg-transparent border-t border-space-border/30">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        
+
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-outfit font-extrabold mb-4">
@@ -28,7 +27,7 @@ export default function Education() {
 
         {/* Card Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-5xl mx-auto">
-          
+
           {/* Degree Card */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -51,7 +50,7 @@ export default function Education() {
               <div className="space-y-4">
                 <div>
                   <h4 className="text-lg font-semibold text-white">Computer Science & Engineering</h4>
-                  <p className="text-sm text-gray-400 mt-1 font-light">Major in Software Architectures & Logic Systems</p>
+                  <p className="text-sm text-gray-400 mt-1 font-light">Information Technology</p>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-3 text-xs text-gray-400 pt-2">
@@ -64,7 +63,7 @@ export default function Education() {
                   </div>
                   <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-space-dark border border-space-border/60">
                     <Star size={14} className="text-amber-400" />
-                    <span>GPA: 8.5/10</span>
+                    <span>GPA: 7.86/10</span>
                   </div>
                 </div>
               </div>

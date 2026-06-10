@@ -6,24 +6,24 @@ export default function SkillsMatrix() {
     {
       title: 'Frontend Development',
       icon: <Layers className="text-nebula-cyan" size={20} />,
-      skills: ['React.js', 'Vite', 'Tailwind CSS', 'JavaScript (ES6+)', 'HTML5 & CSS3', 'Framer Motion']
+      skills: ['React.js', 'Vite', 'Tailwind CSS', 'JavaScript (ES6+)', 'HTML5 & CSS3']
     },
     {
       title: 'Backend & Databases',
       icon: <Server className="text-nebula-blue" size={20} />,
-      skills: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'Firebase', 'RESTful APIs']
+      skills: ['Node.js', 'Express.js']
     },
     {
       title: 'Tools & APIs',
       icon: <Cpu className="text-nebula-purple" size={20} />,
-      skills: ['Git & GitHub', 'GraphQL', 'Google Maps API', 'Python (NLP)', 'Vercel / Netlify', 'Postman']
+      skills: ['Git & GitHub', 'Google Maps API', 'Python (NLP)', 'Vercel / Netlify']
     }
   ];
 
   return (
     <section id="skills" className="relative py-24 bg-transparent border-t border-space-border/30">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
+
         {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-outfit font-extrabold mb-4">
@@ -77,7 +77,7 @@ export default function SkillsMatrix() {
           className="max-w-4xl mx-auto p-6 rounded-2xl glass-panel border border-space-border relative overflow-hidden group hover:border-nebula-purple/30 transition-all duration-300"
         >
           <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-nebula-purple/5 to-nebula-pink/5 rounded-full blur-2xl pointer-events-none" />
-          
+
           <div className="flex flex-col sm:flex-row items-center gap-4 relative z-10">
             <div className="p-3.5 rounded-2xl bg-space-dark border border-space-border/80 text-nebula-purple animate-pulse">
               <BookOpen size={24} />

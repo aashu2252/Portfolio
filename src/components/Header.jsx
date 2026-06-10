@@ -51,11 +51,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
           ? 'bg-space-black/70 backdrop-blur-md border-b border-space-border py-4 shadow-lg shadow-black/20'
           : 'bg-transparent py-6'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
@@ -77,11 +76,10 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => handleNavClick(link.id)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 relative ${
-                activeSection === link.id
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 relative ${activeSection === link.id
                   ? 'text-white'
                   : 'text-gray-400 hover:text-white'
-              }`}
+                }`}
             >
               {link.label}
               {activeSection === link.id && (
@@ -89,17 +87,17 @@ export default function Header() {
               )}
             </button>
           ))}
-          
+
           <button
             onClick={() => handleNavClick('contact')}
             className="ml-4 px-5 py-2 text-xs font-semibold uppercase tracking-wider rounded-full border border-nebula-cyan/50 text-nebula-cyan hover:bg-nebula-cyan/10 hover:border-nebula-cyan transition-all duration-300 shadow-[0_0_15px_rgba(0,242,254,0.1)] hover:shadow-[0_0_20px_rgba(0,242,254,0.3)] hover:-translate-y-0.5 cursor-pointer"
           >
             Hire Me
           </button>
-          
+
           <a
-            href="/Aashutosh_Singh_Resume.pdf"
-            download="Aashutosh_Singh_Resume.pdf"
+            href="/resume.pdf"
+            download="resume.pdf"
             className="ml-2 px-5 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-gradient-to-r from-nebula-cyan to-nebula-blue text-space-black hover:shadow-[0_0_20px_rgba(0,242,254,0.4)] hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center cursor-pointer"
           >
             Resume
@@ -118,22 +116,20 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full glass-panel border-t border-space-border py-6 transition-all duration-300 ease-in-out ${
-          isOpen
+        className={`md:hidden absolute top-full left-0 w-full glass-panel border-t border-space-border py-6 transition-all duration-300 ease-in-out ${isOpen
             ? 'opacity-100 translate-y-0 pointer-events-auto'
             : 'opacity-0 -translate-y-4 pointer-events-none'
-        }`}
+          }`}
       >
         <nav className="flex flex-col space-y-3 px-6">
           {navLinks.map((link) => (
             <button
               key={link.id}
               onClick={() => handleNavClick(link.id)}
-              className={`text-left py-2 text-base font-medium transition-colors ${
-                activeSection === link.id
+              className={`text-left py-2 text-base font-medium transition-colors ${activeSection === link.id
                   ? 'text-nebula-cyan font-semibold pl-2 border-l-2 border-nebula-cyan'
                   : 'text-gray-400 hover:text-white'
-              }`}
+                }`}
             >
               {link.label}
             </button>
@@ -144,7 +140,7 @@ export default function Header() {
           >
             Hire Me
           </button>
-          
+
           <a
             href="/Aashutosh_Singh_Resume.pdf"
             download="Aashutosh_Singh_Resume.pdf"

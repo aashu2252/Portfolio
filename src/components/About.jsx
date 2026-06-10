@@ -7,10 +7,6 @@ export default function About() {
     { name: 'Node.js', level: 'Intermediate', color: 'from-green-400 to-emerald-500' },
     { name: 'Tailwind CSS', level: 'Advanced', color: 'from-cyan-400 to-teal-500' },
     { name: 'JavaScript (ES6+)', level: 'Advanced', color: 'from-yellow-400 to-amber-500' },
-    { name: 'Firebase', level: 'Intermediate', color: 'from-orange-400 to-amber-600' },
-    { name: 'MongoDB & SQL', level: 'Intermediate', color: 'from-green-500 to-emerald-700' },
-    { name: 'Python & NLP', level: 'Intermediate', color: 'from-blue-500 to-indigo-600' },
-    { name: 'TypeScript', level: 'Advanced', color: 'from-purple-400 to-pink-500' },
   ];
 
   const focusAreas = [
@@ -34,7 +30,7 @@ export default function About() {
   return (
     <section id="about" className="relative py-24 bg-transparent border-t border-space-border/30">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
+
         {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-outfit font-extrabold mb-4">
@@ -59,7 +55,7 @@ export default function About() {
               <MapPin size={22} className="text-nebula-cyan animate-pulse" />
               Based in Indore, India
             </h3>
-            
+
             <p className="text-gray-300 leading-relaxed text-lg font-light">
               As a <span className="text-white font-semibold">Second Year Undergraduate Software Developer</span> based in Indore, India, I specialize in creating full-stack web architectures and responsive interfaces. I focus on developing clean, interactive applications that solve real-world problems.
             </p>
