@@ -1,6 +1,6 @@
-# Interactive Space Portfolio | Developer Profile
+# Specialist Developer Portfolio | Aashutosh Kumar Singh
 
-A premium, fully responsive developer portfolio featuring an interactive, physics-driven deep space dark mode design aesthetic.
+A high-performance, fully responsive specialist developer portfolio featuring an interactive, physics-driven cyber-neural grid and dark mode console aesthetic.
 
 **Live Demo:** [https://aashu2252.github.io/Portfolio/](https://aashu2252.github.io/Portfolio/)
 
@@ -8,35 +8,33 @@ A premium, fully responsive developer portfolio featuring an interactive, physic
 
 ## 🌌 Theme & Design System
 
-The application utilizes an ethereal space design language to simulate a weightless coding console:
-- **Obsidian Dark Void:** High-contrast `#030303` base layer paired with glassmorphic cards (`backdrop-filter: blur(16px)`).
-- **Nebula Accents:** Electric cyan, deep purple, and neon pink glows illuminating background structures.
-- **Weightless Physics:** Keyframe floating animations causing cards, badges, and elements to drift slowly on the Y-axis.
-- **Parallax Navigation:** Interactive canvas-based starfield background that shifts and forms constellation nodes when responding to mouse positions.
-- **3D Interactive Tilts:** Multi-axis lifting tilts using Framer Motion when hover-targeting cards.
+The application utilizes a futuristic developer console design language:
+- **Obsidian Tech Void:** High-contrast `#050508` base layer paired with high-clarity glassmorphic cards (`backdrop-filter: blur(18px)`).
+- **Cybernetic Neon Accents:** Electric cyan, deep purple, and neon pink glows illuminating interactive elements.
+- **Interactive Neural Mesh:** Real-time HTML5 2D canvas with nodes, active data pulses, and cursor spotlight flare.
+- **Micro-Animations & Physics:** Framer Motion spring physics, 3D card perspective hover tilts, and shimmer buttons.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Core Framework:** React 18 & Vite
+- **Core Framework:** React 19 & Vite 8
 - **Styling Pipeline:** Tailwind CSS v4 & PostCSS
-- **Animation System:** Framer Motion (for entrance triggers & 3D micro-interactions)
+- **Animation System:** Framer Motion (for viewport triggers, 3D tilts, and spring micro-interactions)
 - **Icons Library:** Lucide React
-- **Typography:** Google Fonts (Outfit for headers, Inter for text)
+- **Typography:** Google Fonts (Outfit for headers, Inter for text, JetBrains / Monospace for code)
 
 ---
 
 ## 🚀 Sections Included
 
-1. **Hero Section:** Bold introduction as a Second Year Undergraduate Software Developer seeking a Software Engineering Internship, typing animation of core skills, and floating decorative elements.
-2. **About Me:** Academic focus on full-stack engineering based in Indore, detailing specific internship objectives and career development goals.
-3. **Projects Grid:** Staggered floating cards representing:
-   - **RaktSetu:** Geolocation blood-donor network using Google Maps & Firebase.
-   - **IndoreVyapar-AI:** B2B commercial inventory forecasting.
-   - **NutricartAI:** Diet companion built during OpenClaw HackIndia.
-4. **Achievements & Hackathons:** Interactive vertical timeline tracing SIH 2025 (Frontend Developer), OpenClaw HackIndia (NutricartAI), and BECon at IIT Delhi (Golden Pass holder).
-5. **Contact Footer:** Minimalist footer with interactive contact validations, success receipt transitions, and links to GitHub and LinkedIn.
+1. **Hero Section:** Introduction as a Third-Year Undergraduate Software Developer and Software Development Intern at Indori Coders (since July 2026), dynamic typewriter role cycler, interactive developer configuration card, and 3D headshot.
+2. **About Me:** Professional background, core developer tech stack matrix, and active industry focus areas.
+3. **Academic Foundation:** Bachelor of Technology in Computer Science & Engineering (Third-Year Student, CGPA: 7.52/10, Expected Grad: 2028) with foundational curriculum badges.
+4. **Skills Matrix:** Categorized technical competencies across Frontend, Backend & Databases, and Tools & DevOps with active status pings.
+5. **Projects Grid:** Featured full-stack applications with Problem-Solution-Impact breakdown (SoftAppix Agency Platform, TransitOps Fleet ERP, Sanjivani Sync, NutriCart AI).
+6. **Milestones & Honors:** Interactive timeline highlighting the Indori Coders internship (July 2026 – Present), Safe Click 2.0 Hackathon (2026), CPL Bhopal Hackathon (2026), OpenClaw HackIndia (2026), and SIH 2025.
+7. **Contact & Footer:** Terminal-styled inputs, one-click copy email button with toast feedback, and Formspree serverless submission.
 
 ---
 
