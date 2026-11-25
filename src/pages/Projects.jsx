@@ -5,22 +5,12 @@ const freelanceProjects = [
   {
     title: 'Alacrity Enterprises',
     badge: 'Client Work',
-    description: 'Built a conversion-focused B2B wholesale and export showcase website featuring a responsive product catalog grid, category tabs, and direct lead capture workflows.',
-    problem: 'The client needed a scalable global B2B web presence to showcase industrial tapes, electrical components, and mechanical supplies and convert international inquiries.',
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'],
+    description: 'Built and deployed a React + Vite B2B catalog application featuring categorized industrial product listings, serverless quote and customer review forms via Netlify Forms, and Schema.org JSON-LD SEO markup.',
+    problem: 'An Indore-based industrial wholesaler and exporter needed a fast B2B web presence to organize multi-brand supplies (industrial tapes, electrical hardware, fasteners, auto parts) and capture bulk inquiries.',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Netlify Forms', 'Schema.org'],
     github: null,
     demo: 'https://alacrityenterprises.com',
-    highlight: 'Live production client site — drove ↑ 300% lead increase & ↓ 80% bounce rate.',
-  },
-  {
-    title: 'Global Tech Industries',
-    badge: 'Client Work',
-    description: 'Developed a responsive B2B industrial service and catalog portal highlighting technical maintenance operations, product lines, and direct quote-request channels.',
-    problem: 'Establishing a modern digital portal to organize multi-category industrial offerings, support services, and improve organic search visibility.',
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'],
-    github: null,
-    demo: 'https://globaltechinds.com',
-    highlight: 'Live production client site — reached Top 3 SEO ranking & ↑ 200% organic traffic.',
+    highlight: 'Live production B2B site with bulk inquiry & review capture and structured SEO.',
   },
 ];
 
@@ -165,8 +155,8 @@ export default function Projects() {
         <div className="mb-12">
           <h1 className="text-3xl font-heading font-bold mb-3">Projects</h1>
           <p className="text-text-secondary max-w-xl">
-            Client websites delivered as a solo freelancer alongside full-stack and
-            mobile engineering projects.
+            Client work delivered as a solo freelancer alongside internship, full-stack,
+            and hackathon engineering projects.
           </p>
         </div>
       </Reveal>
@@ -174,10 +164,10 @@ export default function Projects() {
       {/* Freelance Projects */}
       <Reveal>
         <h2 className="text-lg font-heading font-semibold mb-4 text-text-secondary">
-          Freelance projects
+          Freelance work
         </h2>
       </Reveal>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
+      <div className="grid grid-cols-1 gap-5 mb-12">
         {freelanceProjects.map((project, i) => (
           <ProjectCard key={project.title} project={project} index={i} />
         ))}
@@ -194,7 +184,7 @@ export default function Projects() {
           <ProjectCard
             key={project.title}
             project={project}
-            index={i + 2}
+            index={i + 1}
           />
         ))}
       </div>
